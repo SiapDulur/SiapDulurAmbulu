@@ -5,42 +5,31 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
 background:#f6fbfb;
-color:#222;
 overflow-x:hidden;
+color:#222;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 header{
 position:sticky;
 top:0;
-z-index:999;
-
+z-index:1000;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-padding:18px 8%;
-
-background:rgba(255,255,255,0.95);
+padding:15px 8%;
+background:rgba(255,255,255,.95);
 backdrop-filter:blur(10px);
-
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
-.logo img{
-height:55px;
-}
+.logo img{height:50px;}
 
-nav{
-display:flex;
-gap:30px;
-}
+nav{display:flex;gap:25px;}
 
 nav a{
 text-decoration:none;
@@ -49,31 +38,24 @@ font-weight:600;
 transition:.3s;
 }
 
-nav a:hover{
-color:#11c8a0;
-}
+nav a:hover{color:#11c8a0;}
 
 .header-btn{
 background:linear-gradient(135deg,#11c8a0,#0fb3d5);
 color:white;
-padding:12px 20px;
-border-radius:30px;
-text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
 font-weight:600;
-box-shadow:0 8px 20px rgba(17,200,160,0.25);
+text-decoration:none;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero{
 position:relative;
-
 display:grid;
 grid-template-columns:1.2fr .9fr .8fr;
-
 gap:40px;
-
-padding:70px 8%;
-
+padding:60px 8%;
 align-items:center;
 }
 
@@ -82,336 +64,178 @@ align-items:center;
 content:'';
 position:absolute;
 inset:0;
-
 background:
-linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+linear-gradient(rgba(255,255,255,.85),rgba(255,255,255,.85)),
 url("assets/perumahan.jpg");
-
 background-size:cover;
 background-position:center;
-
 z-index:-1;
 }
 
-/* ================= LEFT ================= */
-.badge{
-display:inline-block;
-
-padding:10px 18px;
-
-background:#e6faf6;
-
-color:#11b89a;
-
-border-radius:30px;
-
-font-weight:600;
-
-margin-bottom:15px;
-}
-
+/* LEFT */
 .hero h1{
-font-size:60px;
-font-weight:800;
+font-size:58px;
 line-height:1.05;
+font-weight:800;
 }
 
-.hero h1 span{
-color:#11c8a0;
-}
+.hero h1 span{color:#11c8a0;}
 
-.hero-text{
-font-size:20px;
-font-weight:600;
-margin-top:10px;
-}
-
-.hero p{
-color:#666;
-margin-top:10px;
-}
+.hero-text{font-weight:600;margin-top:10px;}
 
 .running-text{
-margin-top:20px;
-
+margin-top:15px;
 background:linear-gradient(90deg,#11c8a0,#0fb3d5);
-
 color:white;
-
-padding:10px 15px;
-
+padding:10px;
 border-radius:12px;
-
-white-space:nowrap;
-overflow:hidden;
 }
 
-/* ================= BUTTON ================= */
+/* BUTTON */
 .hero-buttons{
-margin-top:25px;
 display:flex;
-gap:15px;
+gap:12px;
+margin-top:20px;
 flex-wrap:wrap;
 }
 
 .btn-download{
 background:linear-gradient(135deg,#11c8a0,#0fb3d5);
 color:white;
-
-padding:14px 22px;
-
-border-radius:14px;
-
-text-decoration:none;
-
+padding:14px 20px;
+border-radius:12px;
 font-weight:700;
-
-box-shadow:0 10px 25px rgba(17,200,160,0.25);
+text-decoration:none;
 }
 
 .btn-wa{
 background:white;
 color:#222;
-
-padding:14px 22px;
-
-border-radius:14px;
-
+padding:14px 20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 text-decoration:none;
-
-font-weight:600;
-
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
-/* ================= CENTER IMAGE ================= */
+/* DRIVER */
 .phone img{
 width:100%;
 max-width:380px;
-
-display:block;
-
-filter:drop-shadow(0 25px 35px rgba(0,0,0,0.2));
-
 animation:float 4s ease-in-out infinite;
 }
 
 @keyframes float{
 0%{transform:translateY(0);}
-50%{transform:translateY(-12px);}
+50%{transform:translateY(-10px);}
 100%{transform:translateY(0);}
 }
 
-/* ================= RIGHT CARD ================= */
-.hero-right{
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
+/* INFO CARD */
 .info-card{
 background:white;
-
-padding:20px;
-
-border-radius:18px;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.06);
-
+padding:18px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
 font-weight:600;
+margin-bottom:12px;
 }
 
-/* ================= FEATURES ================= */
+/* FEATURES */
 .features{
-padding:50px 8%;
-
 display:grid;
-
 grid-template-columns:repeat(4,1fr);
-
 gap:20px;
+padding:40px 8%;
 }
 
 .feature{
 background:white;
-
+text-align:center;
 padding:25px;
-
-text-align:center;
-
-border-radius:20px;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.06);
-
-transition:.3s;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
 }
 
-.feature:hover{
-transform:translateY(-6px);
-}
-
-/* ================= SERVICES ================= */
+/* SERVICES */
 .services{
-padding:80px 8%;
-}
-
-.services h2{
-text-align:center;
-font-size:42px;
-margin-bottom:40px;
+padding:70px 8%;
 }
 
 .service-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:25px;
+gap:20px;
 }
 
 .service-card{
 background:white;
-
-padding:30px;
-
-border-radius:22px;
-
-box-shadow:0 10px 30px rgba(0,0,0,0.07);
-
-transition:.3s;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-.service-card:hover{
-transform:translateY(-8px);
-}
-
-.service-card h3{
-color:#11c8a0;
-margin-bottom:10px;
-}
-
-/* ================= OPERASIONAL ================= */
+/* OPERASIONAL */
 .operasional{
-margin:0 8% 60px;
-
+margin:0 8% 50px;
+padding:35px;
 background:linear-gradient(135deg,#11c8a0,#0fb3d5);
-
 color:white;
-
-padding:40px;
-
-border-radius:24px;
-
+border-radius:20px;
 display:grid;
-
 grid-template-columns:repeat(3,1fr);
-
 text-align:center;
 }
 
-.banner-btn{
-background:white;
-color:#11c8a0;
-
-padding:12px 20px;
-
-border-radius:30px;
-
-text-decoration:none;
-
-font-weight:700;
-}
-
-/* ================= DOWNLOAD ================= */
+/* DOWNLOAD */
 .download-section{
-margin:0 8% 60px;
-
-background:linear-gradient(135deg,#11c8a0,#0fb3d5);
-
-border-radius:28px;
-
-color:white;
-
+margin:0 8% 50px;
 padding:40px;
+border-radius:25px;
+background:linear-gradient(135deg,#11c8a0,#0fb3d5);
+color:white;
 }
 
 .download-content{
 display:grid;
 grid-template-columns:300px 1fr;
 align-items:center;
-gap:30px;
-}
-
-.download-driver img{
-width:100%;
-}
-
-.download-text h2{
-font-size:40px;
-}
-
-.download-text span{
-color:#ffe26a;
+gap:25px;
 }
 
 .apk-btn{
 display:inline-block;
-
 margin-top:20px;
-
 background:#ffd12f;
-
-color:#222;
-
-padding:14px 22px;
-
-border-radius:14px;
-
+padding:14px 20px;
+border-radius:12px;
 font-weight:700;
-
+color:#222;
 animation:pulse 2s infinite;
 }
 
 @keyframes pulse{
 0%{transform:scale(1);}
-50%{transform:scale(1.08);}
+50%{transform:scale(1.07);}
 100%{transform:scale(1);}
 }
 
-/* ================= FOOTER ================= */
-footer{
-text-align:center;
-padding:40px;
-background:white;
-}
-
-.footer-logo img{
-height:55px;
-}
-
-/* ================= FLOAT WA ================= */
+/* WA */
 .floating-wa{
 position:fixed;
 right:20px;
 bottom:20px;
-
 width:60px;
 height:60px;
-
-background:#25D366;
-
 border-radius:50%;
-
+background:#25D366;
 display:flex;
 align-items:center;
 justify-content:center;
-
-font-size:28px;
-
 color:white;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
+font-size:28px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media(max-width:992px){
 
 .hero{
@@ -429,7 +253,7 @@ grid-template-columns:1fr;
 
 .operasional{
 grid-template-columns:1fr;
-gap:20px;
+gap:15px;
 }
 
 .download-content{
@@ -437,22 +261,14 @@ grid-template-columns:1fr;
 text-align:center;
 }
 
-nav{
-display:none;
-}
+nav{display:none;}
 }
 
 @media(max-width:600px){
 
-.hero h1{
-font-size:34px;
-}
+.hero h1{font-size:32px;}
 
-.features{
-grid-template-columns:1fr;
-}
+.features{grid-template-columns:1fr;}
 
-.hero-buttons{
-justify-content:center;
-}
+.hero-buttons{justify-content:center;}
 }
